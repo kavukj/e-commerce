@@ -1,0 +1,17 @@
+.filter-section{
+    background-color: rgb(217, 217, 217);
+    padding: 10px;
+}
+.filter-dropdown{
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.price{
+    color: #000;
+    background-color: #000;
+}

@@ -1,0 +1,25 @@
+.navbar{
+    font-weight: bold;
+    padding: 20px;
+    font-size: 1.2rem;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+.filter{
+    margin: 10px 0;
+}
+.container{
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.product-section{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

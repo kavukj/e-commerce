@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+
+
+import { useEffect, useContext } from 'react';
 import './App.css';
+import axios from 'axios';
+import { ProductContextProvider, ProductsContext } from './context/productContext';
+import HomePage from './component/homePageComponent/homepage';
 
 function App() {
+  const {products, setProducts} = useContext(ProductsContext)
+
+  useEffect(()=> {
+    axios.get('https://fakestoreapi.com/products?limit=5').then((response)=>{
+      setProducts(response.data)
+    })
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HomePage/>
     </div>
   );
 }
