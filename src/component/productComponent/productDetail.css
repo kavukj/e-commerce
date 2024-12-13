@@ -2,11 +2,18 @@
     position: fixed;
     width: 100%;
     overflow: hidden;
-    height: 80%;
+    height: 100%;
     background-color: rgba(0,0,0,0.5);
     z-index: 1000;
     display: flex;
     justify-content: center;
+    top: 0;
+    left: 0;
+}
+
+.body-no-scroll {
+    overflow: hidden;
+    height: 100vh;  
 }
 
 .product-detail{
@@ -90,6 +97,7 @@
     flex-wrap: wrap;
     gap: 20px;
     padding-left: 20px;
+    margin: 20px 10px 20px 0;
 }
 
 .button {
@@ -97,12 +105,26 @@
     margin: 0;
     text-align: center; 
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
 }
 
 @media (max-width: 768px) {
+    .product-detail{
+        width: 85%;
+        padding: 8px;
+    }
     .button {
-        flex: 1 1 100%;
+        flex: 1 1 60%;
+    }
+}
+
+@media (min-width: 769px ) and (max-width: 1032px) {
+    .product-detail{
+        width: 65%;
+        padding: 8px;
     }
 }
