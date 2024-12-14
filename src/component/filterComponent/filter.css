@@ -1,17 +1,41 @@
 .filter-section{
     background-color: rgb(217, 217, 217);
     padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
 }
+
 .filter-dropdown{
-    padding: 10px 20px;
-    margin: 10px;
+    padding: 10px;
     background-color: black;
     color: white;
     font-size: 15px;
     font-weight: bold;
+    cursor: pointer;
 }
 
-.price{
-    color: #000;
+.price-slider{
+    -webkit-appearance: none;
+    background: linear-gradient(to right, #414242 0%, #010101 100%);
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    height: 15px;
+    margin-top: 12px;
+}
+
+.resetFilter {
+    padding: 10px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.resetFilter:hover{
     background-color: #000;
+    color: white;
 }
