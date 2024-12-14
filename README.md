@@ -1,12 +1,18 @@
-# Getting Started with Create React App
+# E-Commerce Project
 
-This project was made with Create React App.
+## Project setup
 
-## Available Scripts
+### Clone the repository
+`https://github.com/kavukj/e-commerce.git`
 
-In the project directory, you can run:
+### Navigate into the project directory
+`cd e-commerce`
 
-### `npm start`
+### Install dependencies
+`npm install`
+
+### Run the app
+`npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -37,20 +43,3 @@ The application follows a functional programming paradigm by using React functio
 The app is built with responsive design principles using Flexbox and CSS Media Queries. 
 
 The app dynamically fetches product data from an API based on user-selected filters. To ensure a seamless user experience, data is fetched on initial load and whenever relevant filters (such as category, rating, or price) change.
-
-
-## Project setup
-
-### Clone the repository
-
-
-### Navigate into the project directory
-cd e-commerce
-
-### Install dependencies
-npm install
-
-### Run the app
-npm start
-
-
