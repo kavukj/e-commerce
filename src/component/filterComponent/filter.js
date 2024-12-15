@@ -57,15 +57,18 @@ const Filter = () => {
                     <option value="3">{`More than 3`}</option>
                     <option value="4">{`More than 4`}</option>
                 </select>
-
+                <div>
+                <label for='price-range' className='price-range'>Price: Rs 0-{slider}</label>
                 <input
                     className="price-slider"
+                    name = "price-range"
                     type="range"
                     min="200"
                     max="5000"
                     value={slider || 5000}
                     onChange={handlePrice}
                 />
+                </div>
             <select className="sortPrice filter-dropdown" onChange={handleSorting} value={sorting}>
                     <option value="asc">Price Low to High</option>
                     <option value="desc">Price High to Low</option>

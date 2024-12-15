@@ -15,6 +15,12 @@
     cursor: pointer;
 }
 
+.price-range{
+    font-size: 14px;
+    margin: 10px;
+    font-weight: bold;
+}
+
 .price-slider{
     -webkit-appearance: none;
     background: linear-gradient(to right, #414242 0%, #010101 100%);
