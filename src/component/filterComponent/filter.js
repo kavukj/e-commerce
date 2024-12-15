@@ -58,14 +58,14 @@ const Filter = () => {
                     <option value="4">{`More than 4`}</option>
                 </select>
                 <div>
-                <label for='price-range' className='price-range'>Price: Rs 0-{slider}</label>
+                <label for='price-range' className='price-range'>Price: 0-{slider}</label>
                 <input
                     className="price-slider"
                     name = "price-range"
                     type="range"
                     min="200"
-                    max="5000"
-                    value={slider || 5000}
+                    max="2000"
+                    value={slider || 2000}
                     onChange={handlePrice}
                 />
                 </div>

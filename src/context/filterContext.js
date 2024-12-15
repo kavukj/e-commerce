@@ -4,7 +4,7 @@ export const FilterContext = createContext(null);
 
 export const FilterContextWrapper = (props) => {
     const [ rating, setRating]  = useState(0);
-    const [ price, setPrice ] = useState(5000);
+    const [ price, setPrice ] = useState(2000);
     const [ category, setCategory ] = useState('all');
     const [ sorting, setSort ] = useState('asc');
 

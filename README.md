@@ -20,6 +20,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+### Hosted at : ```https://kavukj.github.io/e-commerce/```
+
 ## Optimizations used
 
 ### Memoization with useMemo
@@ -43,3 +45,10 @@ The application follows a functional programming paradigm by using React functio
 The app is built with responsive design principles using Flexbox and CSS Media Queries. 
 
 The app dynamically fetches product data from an API based on user-selected filters. To ensure a seamless user experience, data is fetched on initial load and whenever relevant filters (such as category, rating, or price) change.
+
+## Limitation and Enhancement
+
+Currently, API used supports only limit parameter because of which the start index will always be 0. We can create an API which takes two parameters, one to support startIndex and other for limit which can provide better performance with pagination.
+
+Also, currently if filters are applied and we click on show more, API will fetch 4 new products but it may not be displayed on UI because of the filter selected. This User experience can be handled properly if given more time either by creating new API or implementing some complex logic on UI.
+
